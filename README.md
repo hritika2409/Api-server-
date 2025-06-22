@@ -122,26 +122,7 @@ cd book-api-frontend
 npm install
 ```
 
-### Step 4: Environment Configuration
-Create a `.env` file in the root directory:
-```env
-# Server Configuration
-PORT=5000
-NODE_ENV=development
-
-# Database Configuration
-MONGODB_URI=mongodb://localhost:27017/book-management
-# For MongoDB Atlas: mongodb+srv://username:password@cluster.mongodb.net/book-management
-
-# Authentication
-JWT_SECRET=your-super-secret-jwt-key
-JWT_EXPIRE=30d
-
-# CORS Configuration
-CLIENT_URL=http://localhost:3000
-```
-
-### Step 5: Database Setup
+### Step 4: Database Setup
 
 #### Option A: Local MongoDB
 ```bash
@@ -158,7 +139,7 @@ mongod
 4. Get your connection string
 5. Update `MONGODB_URI` in `.env`
 
-### Step 6: Run the Application
+### Step 5: Run the Application
 
 #### Start the Backend Server
 ```bash
